@@ -151,7 +151,7 @@ make cola-index
 
 ## Deployment
 
-The intended topology is Firebase Hosting for the compiled web application with same-origin `/api/**` and `/health/**` rewrites to a public Cloud Run service. Cloud Run runs the API and COLA metadata sidecar in one multi-container revision with minimum instances `0`, maximum instances `1`, and request concurrency `1`.
+The application is deployed at **https://label-lens-nmh-2026.web.app**. Firebase Hosting serves the compiled web application and applies same-origin `/api/**` and `/health/**` rewrites to a public Cloud Run service; Cloud Run runs the API and COLA metadata sidecar in one multi-container revision with minimum instances `0`, maximum instances `1`, and request concurrency `1`.
 
 ### Prerequisites
 

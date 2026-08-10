@@ -1,8 +1,20 @@
 # Firebase and Cloud Run Deployment Runbook
 
-**Status:** Prepared; no cloud resources created  
+**Status:** Deployed and smoke-tested on 2026-08-09  
 **Region:** `us-east1`  
 **Cost posture:** Request-based billing, scale to zero, maximum one instance, approximately $10/month ceiling
+
+## Current release
+
+- **Firebase project:** `label-lens-nmh-2026`
+- **Public URL:** https://label-lens-nmh-2026.web.app
+- **Cloud Run service:** `label-verifier`
+- **Cloud Run revision:** `label-verifier-00001-hv2`
+- **Application image:** `sha256:62a13569fe61923cc55097f3e40530f2cb90d366fa81a323bd1afbfe4d70db01`
+- **COLA sidecar image:** `sha256:75dec81e687a5c031c7c31d26186f4cea7e0791c8043347a5a134e893c7b9455`
+- **Budget notifications:** 50%, 80%, and 100% of $10 monthly project spend
+
+The release gate completed with 51 passing Python tests, 11 passing web tests, and a successful production build. Public smoke testing confirmed security headers, readiness, real two-image Tesseract OCR, automatic Seven Fathoms identification, cross-reference results, a mock Needs Correction receipt, and a clean browser console. The measured warm verification completed in 3.1 seconds.
 
 ## 1. Authorization checkpoint
 
