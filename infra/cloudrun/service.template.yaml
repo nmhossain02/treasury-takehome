@@ -3,8 +3,8 @@ kind: Service
 metadata:
   name: label-verifier
   labels:
-    app.kubernetes.io/name: label-verifier
-    app.kubernetes.io/part-of: alcohol-label-verifier
+    app: label-verifier
+    component: alcohol-label-verifier
   annotations:
     run.googleapis.com/ingress: all
 spec:
@@ -28,8 +28,6 @@ spec:
           env:
             - name: APP_ENV
               value: production
-            - name: PORT
-              value: "8080"
             - name: COLA_MOCK_BASE_URL
               value: http://localhost:8081
             - name: OCR_STRATEGIES
@@ -70,8 +68,6 @@ spec:
           env:
             - name: APP_ENV
               value: production
-            - name: PORT
-              value: "8081"
             - name: DEMO_SYNTHETIC_ONLY
               value: "true"
           resources:
