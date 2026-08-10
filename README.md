@@ -151,7 +151,7 @@ make cola-index
 
 ## Deployment
 
-The application is deployed at **https://label-lens-nmh-2026.web.app**. Firebase Hosting serves the compiled web application and applies same-origin `/api/**` and `/health/**` rewrites to a public Cloud Run service; Cloud Run runs the API and COLA metadata sidecar in one multi-container revision with minimum instances `0`, maximum instances `1`, and request concurrency `1`.
+A public demo is available at **https://label-lens-nmh-2026.web.app**. The deployment uses Firebase Hosting for the web application and same-origin API rewrites, with the API and COLA metadata sidecar running on Cloud Run. The supplied templates default to scale-to-zero with a one-instance ceiling.
 
 ### Prerequisites
 
