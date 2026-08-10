@@ -1,0 +1,64 @@
+name: label-verifier
+
+services:
+  cola-mock:
+    build:
+      context: .
+      dockerfile: docker/cola-mock.Dockerfile
+    environment:
+      APP_ENV: development
+      PORT: "8081"
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8081/health/ready', timeout=2)"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build:
+      context: .
+      dockerfile: docker/api.Dockerfile
+    environment:
+      APP_ENV: development
+      PORT: "8080"
+      COLA_MOCK_BASE_URL: http://cola-mock:8081
+      OCR_STRATEGIES: ${OCR_STRATEGIES:-tesseract}
+      OCR_TESSERACT_PATH: /usr/bin/tesseract
+      VERIFICATION_DEADLINE_MS: "5000"
+      MAX_IMAGE_BYTES: "1572864"
+      MAX_AGGREGATE_BYTES: "12582912"
+      MAX_DECODED_PIXELS: "60000000"
+    depends_on:
+      cola-mock:
+        condition: service_healthy
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/health/ready', timeout=2)"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  web:
+    build:
+      context: .
+      dockerfile: docker/web.Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      api:
+        condition: service_healthy
+    read_only: true
+    tmpfs:
+      - /data:size=8m
+      - /config:size=8m
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]

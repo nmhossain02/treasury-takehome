@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/label-ocr/benchmark-report.schema.json",
+  "title": "Label OCR benchmark report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "dataset",
+    "provider",
+    "configuration",
+    "environment",
+    "summary",
+    "items"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "dataset": { "type": "string" },
+    "provider": {
+      "type": "object",
+      "required": ["name", "version"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" }
+      }
+    },
+    "configuration": { "type": "object" },
+    "environment": { "type": "object" },
+    "summary": {
+      "type": "object",
+      "required": [
+        "items",
+        "mean_cer",
+        "mean_wer",
+        "critical_field_recall",
+        "latency_p50_ms",
+        "latency_p95_ms"
+      ],
+      "properties": {
+        "items": { "type": "integer", "minimum": 1 },
+        "mean_cer": { "type": "number", "minimum": 0 },
+        "mean_wer": { "type": "number", "minimum": 0 },
+        "critical_field_recall": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "latency_p50_ms": { "type": "number", "minimum": 0 },
+        "latency_p95_ms": { "type": "number", "minimum": 0 }
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "item_id",
+          "status",
+          "expected_text",
+          "actual_text",
+          "cer",
+          "wer",
+          "field_results",
+          "latency_ms",
+          "error_codes"
+        ]
+      }
+    }
+  }
+}

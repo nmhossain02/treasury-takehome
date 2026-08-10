@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/label-ocr/dataset-manifest.schema.json",
+  "title": "Label OCR dataset manifest",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["schema_version", "dataset_name", "items"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "dataset_name": { "type": "string", "minLength": 1 },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/item" }
+    }
+  },
+  "$defs": {
+    "normalizedBox": {
+      "type": "array",
+      "prefixItems": [
+        { "type": "number", "minimum": 0, "maximum": 1 },
+        { "type": "number", "minimum": 0, "maximum": 1 },
+        { "type": "number", "minimum": 0, "maximum": 1 },
+        { "type": "number", "minimum": 0, "maximum": 1 }
+      ],
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "annotation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "bbox"],
+      "properties": {
+        "text": { "type": "string", "minLength": 1 },
+        "bbox": { "$ref": "#/$defs/normalizedBox" },
+        "field_name": { "type": "string", "minLength": 1 }
+      }
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["item_id", "image_path", "media_type", "expected_text"],
+      "properties": {
+        "item_id": { "type": "string", "minLength": 1 },
+        "image_path": { "type": "string", "minLength": 1 },
+        "media_type": { "enum": ["image/jpeg", "image/png"] },
+        "expected_text": { "type": "string" },
+        "annotations": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/annotation" }
+        },
+        "fields": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        }
+      }
+    }
+  }
+}

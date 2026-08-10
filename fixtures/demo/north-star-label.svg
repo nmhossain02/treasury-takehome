@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+  <rect width="900" height="1200" fill="#f4ead2"/>
+  <rect x="45" y="45" width="810" height="1110" rx="20" fill="none" stroke="#201d18" stroke-width="8"/>
+  <text x="450" y="175" text-anchor="middle" font-family="Georgia, serif" font-size="40">MOCK TTB 001</text>
+  <text x="450" y="330" text-anchor="middle" font-family="Georgia, serif" font-size="92" font-weight="bold">NORTH STAR</text>
+  <text x="450" y="420" text-anchor="middle" font-family="Georgia, serif" font-size="55">RESERVE</text>
+  <path d="M190 490H710" stroke="#201d18" stroke-width="4"/>
+  <text x="450" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="46">STRAIGHT BOURBON WHISKY</text>
+  <text x="450" y="685" text-anchor="middle" font-family="Arial, sans-serif" font-size="42">40% ALC/VOL</text>
+  <text x="450" y="755" text-anchor="middle" font-family="Arial, sans-serif" font-size="42">750 mL</text>
+  <text x="110" y="870" font-family="Arial, sans-serif" font-size="23" font-weight="bold">GOVERNMENT WARNING:</text>
+  <text x="110" y="910" font-family="Arial, sans-serif" font-size="22">Synthetic prototype label. No real product or application.</text>
+  <text x="450" y="1060" text-anchor="middle" font-family="Arial, sans-serif" font-size="25">EXAMPLE SPIRITS COMPANY · LOUISVILLE, KENTUCKY</text>
+</svg>

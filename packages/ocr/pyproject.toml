@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "label-ocr"
+version = "0.1.0"
+description = "Provider-neutral OCR contract and local OCR implementations for label verification"
+requires-python = ">=3.12"
+dependencies = ["Pillow>=11.0,<13"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.3", "pytest-asyncio>=0.24"]
+
+[project.scripts]
+label-ocr-benchmark = "label_ocr.benchmark:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/label_ocr"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+asyncio_mode = "auto"
+testpaths = ["tests"]
+

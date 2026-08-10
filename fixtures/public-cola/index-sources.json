@@ -1,0 +1,14 @@
+{
+  "dataset_name": "ttb-public-cola-distilled-spirits",
+  "queries": [
+    {
+      "completed_from": "01/02/2025",
+      "completed_to": "01/02/2025",
+      "expected_export_sha256": "339df9ad8e3dec40366b842d9c769fd52886c878d61674902ec6df467a9da146",
+      "expected_export_records": 346,
+      "id": "completed-2025-01-02"
+    }
+  ],
+  "schema_version": 1,
+  "snapshot_date": "2026-08-09"
+}

@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "dataset_name": "ttb-public-cola-samples",
+  "provenance_note": "Public registry images may contain third-party artwork. They are downloaded for local evaluation and excluded from source control; no public-domain claim is made.",
+  "samples": [
+    {
+      "ttb_id": "11038001000659",
+      "prototype_application_id": "sample_ttb_11038001000659",
+      "registry_status_at_review": "surrendered",
+      "completed_search_date": "01/02/2025",
+      "approval_date": "03/09/2011",
+      "detail_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicDisplaySearchBasic&ttbid=11038001000659",
+      "brand_name": "Seven Fathoms",
+      "class_type": "Premium Rum",
+      "abv": 40,
+      "net_contents_ml": 750,
+      "country_of_origin": "Cayman Islands",
+      "attachments": [
+        {
+          "role": "front",
+          "registry_filename": "7 Fathoms - front 2-7-11.JPG",
+          "output_filename": "front.jpg",
+          "sha256": "08de8f51009a4cb56f43b009d7b70557d33d3b547196a93a94d864b592cad9a3"
+        },
+        {
+          "role": "back",
+          "registry_filename": "7 Fathoms - back 2-22-new UPC.jpg",
+          "output_filename": "back.jpg",
+          "sha256": "59458aa581e9ff5d01f7e6fa1a16c9dd50bacf693ed99e7dee84f6af5b003f31"
+        }
+      ]
+    },
+    {
+      "ttb_id": "24325001000771",
+      "prototype_application_id": "sample_ttb_24325001000771",
+      "registry_status_at_review": "approved",
+      "completed_search_date": "01/02/2025",
+      "approval_date": "01/02/2025",
+      "detail_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicDisplaySearchBasic&ttbid=24325001000771",
+      "brand_name": "Turtle Rabbit",
+      "class_type": "Tequila",
+      "abv": null,
+      "net_contents_ml": null,
+      "country_of_origin": "Mexico",
+      "attachments": [
+        {
+          "role": "front",
+          "registry_filename": "TR front.jpg",
+          "output_filename": "front.jpg",
+          "sha256": "6b91e645877a08b3bbfde96ece3450ff8c986320694ae3f1b6b9a884505cbf5b"
+        },
+        {
+          "role": "back",
+          "registry_filename": "back-label.jpg",
+          "output_filename": "back.jpg",
+          "sha256": "0401e3e9db72f614ff062fa7f0b1f925d78ab5a0ee57cf388cf55c414cbc8ebf"
+        }
+      ]
+    },
+    {
+      "ttb_id": "24345001000174",
+      "prototype_application_id": "sample_ttb_24345001000174",
+      "registry_status_at_review": "approved",
+      "completed_search_date": "01/02/2025",
+      "approval_date": "01/02/2025",
+      "detail_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicDisplaySearchBasic&ttbid=24345001000174",
+      "brand_name": "44° North",
+      "class_type": "Bloody Mary",
+      "abv": null,
+      "net_contents_ml": null,
+      "country_of_origin": "United States",
+      "attachments": [
+        {
+          "role": "front",
+          "registry_filename": "Brand Label v3.png",
+          "output_filename": "front.png",
+          "sha256": "2bbbd423b5297d3beb6cf385322c18bbee62db00a68b5e9c42615ef6a2964d3e"
+        },
+        {
+          "role": "neck",
+          "registry_filename": "Neck Label.jpg",
+          "output_filename": "neck.jpg",
+          "sha256": "23692b8bef4e75181af9862ab3021b702149d3b1ba5b0a47a474042b9597c6ca"
+        },
+        {
+          "role": "back",
+          "registry_filename": "Back Label.jpg",
+          "output_filename": "back.jpg",
+          "sha256": "bd1e334a8740456963227e24decd5f69ab46c7c0dc8daf331c0330ee49a0c0f4"
+        }
+      ]
+    },
+    {
+      "ttb_id": "24353001000862",
+      "prototype_application_id": "sample_ttb_24353001000862",
+      "registry_status_at_review": "approved",
+      "completed_search_date": "01/02/2025",
+      "approval_date": "01/02/2025",
+      "detail_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicDisplaySearchBasic&ttbid=24353001000862",
+      "brand_name": "Terra Brasilis Cachaça",
+      "class_type": "Other Rum Gold",
+      "abv": null,
+      "net_contents_ml": null,
+      "country_of_origin": "Brazil",
+      "attachments": [
+        {
+          "role": "front",
+          "registry_filename": "TerraBF.png",
+          "output_filename": "front.png",
+          "sha256": "3d5b4c7e18e6b827153b1f881fe62c80ec7d3a1528da7b2f65b1066d5fb6db92"
+        },
+        {
+          "role": "back",
+          "registry_filename": "295501 CR Rev 2b.jpg",
+          "output_filename": "back.jpg",
+          "sha256": "be0cbc70421d8b45b303b8a2eba12c3b0fcd81d5de2242cf28b7bb1f0db02758"
+        }
+      ]
+    },
+    {
+      "ttb_id": "24366001000234",
+      "prototype_application_id": "sample_ttb_24366001000234",
+      "registry_status_at_review": "approved",
+      "completed_search_date": "01/02/2025",
+      "approval_date": "01/02/2025",
+      "detail_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicDisplaySearchBasic&ttbid=24366001000234",
+      "brand_name": "Dark Arts Whiskey House",
+      "class_type": "Straight Bourbon Whisky",
+      "abv": null,
+      "net_contents_ml": null,
+      "country_of_origin": "United States",
+      "attachments": [
+        {
+          "role": "front",
+          "registry_filename": "DAWH-Label-purple-00850054780126 Single Barrel Selection FRONT.jpg",
+          "output_filename": "front.jpg",
+          "sha256": "bedace0e5cd2a45fc859f1c4e1399eed7d33d1ef84f7575222380b6e06d19713"
+        },
+        {
+          "role": "back",
+          "registry_filename": "DAWH-Label-purple.jpg",
+          "output_filename": "back.jpg",
+          "sha256": "d4e615d7617d74c6b631b91734ffe2ee56b907778d6231dd3c173127b87d8bd4"
+        }
+      ]
+    },
+    {
+      "ttb_id": "24366001000241",
+      "prototype_application_id": "sample_ttb_24366001000241",
+      "registry_status_at_review": "approved",
+      "completed_search_date": "01/02/2025",
+      "approval_date": "01/02/2025",
+      "detail_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicDisplaySearchBasic&ttbid=24366001000241",
+      "brand_name": "Muralist",
+      "class_type": "Straight Bourbon Whisky",
+      "abv": null,
+      "net_contents_ml": null,
+      "country_of_origin": "United States",
+      "attachments": [
+        {
+          "role": "front",
+          "registry_filename": "Muralist_Label_front.jpg",
+          "output_filename": "front.jpg",
+          "sha256": "f525f2e16c28ae9a51cbd36bd5effa8f1be821b1ddaf2501b86f1db9907108b3"
+        },
+        {
+          "role": "inside",
+          "registry_filename": "Muralist_Label_front Inside.jpg",
+          "output_filename": "inside.jpg",
+          "sha256": "3a2fb7f13a92650b5b3741d50e0c2aa473a88fafb16864b220c5da7e638d2851"
+        },
+        {
+          "role": "back",
+          "registry_filename": "Muralist_Label_Back.jpg",
+          "output_filename": "back.jpg",
+          "sha256": "d339dd815b4758976084026946c3c78d22ed08ef5908ba1124dc25ac2cccd32b"
+        }
+      ]
+    },
+    {
+      "ttb_id": "25002001000155",
+      "prototype_application_id": "sample_ttb_25002001000155",
+      "registry_status_at_review": "approved",
+      "completed_search_date": "01/02/2025",
+      "approval_date": "01/02/2025",
+      "detail_url": "https://www.ttbonline.gov/colasonline/viewColaDetails.do?action=publicDisplaySearchBasic&ttbid=25002001000155",
+      "brand_name": "Crown Royal",
+      "class_type": "Canadian Whisky",
+      "abv": null,
+      "net_contents_ml": null,
+      "country_of_origin": "Canada",
+      "attachments": [
+        {
+          "role": "front",
+          "registry_filename": "CR 32Y 750mL Front Label.jpg",
+          "output_filename": "front.jpg",
+          "sha256": "897ce83eb4f4c392caea042593ba43cddc75e195ae46757e7a2c45619e4a80d2"
+        },
+        {
+          "role": "back",
+          "registry_filename": "CR 32Y 750mL Back Label.jpg",
+          "output_filename": "back.jpg",
+          "sha256": "f383bcc2f56a46577ec2edf28494f8f040c4f809a5d9e05fd9737da037796f66"
+        }
+      ]
+    }
+  ]
+}
